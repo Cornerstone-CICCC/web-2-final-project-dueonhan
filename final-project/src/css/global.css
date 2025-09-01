@@ -1,0 +1,371 @@
+/* Initial CSS Setup Start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Initial CSS Setup End */
+
+/* Header Start */
+.header-first-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 54px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 0 64px;
+}
+
+.header-first-section nav menu {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.header-first-section nav menu li:nth-child(1) a {
+  font-weight: bold;
+}
+
+.header-first-section .logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-first-section {
+    display: none;
+  }
+}
+
+.header-second-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+  border-bottom: 1px solid black;
+  padding: 0 64px;
+}
+
+.header-second-section nav menu {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.header-second-section nav menu li:hover {
+  font-weight: bold;
+}
+
+.header-second-section nav menu li a {
+  display: block;
+  height: 100%;
+}
+
+.header-second-section nav menu li:nth-child(5) {
+  background-color: black;
+  color: white;
+  width: 160px;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Header end */
+
+/* Header mobile menu start */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 1001;
+  padding: 80px 20px;
+}
+
+.mobile-menu.open {
+  left: 0;
+}
+
+.mobile-menu-close-button {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.mobile-menu menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu nav menu li a {
+  color: hsl(219, 9%, 45%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header-second-section {
+    padding: 0 20px;
+  }
+
+  .header-second-section nav menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+/* Header mobile menu end */
+
+/* Footer start */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: white;
+  padding: 80px 64px;
+}
+
+.footer-container > div {
+  flex-basis: 25%;
+  padding-right: 20px;
+}
+
+.footer-intro-first {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.eamil-form {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  height: 48px;
+}
+
+.eamil-text-form {
+  flex-grow: 1;
+  min-height: 48px;
+  border-radius: 5px;
+  padding: 12px;
+  border: 1px solid black;
+}
+
+.eamil-submit-btn {
+  min-height: 48px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.footer-intro-second {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.footer-container menu p strong {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-container menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-container .footer-first-section {
+  flex: 2;
+}
+
+.footer-container .footer-second-section,
+.footer-container .footer-third-section,
+.footer-container .footer-fourth-section {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.second-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 64px;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+.second-footer nav menu {
+  display: flex;
+  gap: 32px;
+}
+
+.second-footer nav menu li a {
+  text-decoration: underline;
+}
+
+.second-footer nav menu li:hover {
+  font-weight: bold;
+}
+
+.footer-second-section nav menu,
+.footer-third-section nav menu,
+.footer-fourth-section nav menu {
+  font-size: 12px;
+}
+
+.footer-second-section nav menu li:hover,
+.footer-third-section nav menu li:hover,
+.footer-fourth-section nav menu li:hover {
+  font-weight: bold;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+/* Footer end */
+
+/* mobile Footer start */
+@media (max-width: 768px) {
+  footer .footer-container,
+  footer .second-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .mobile-first-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-first-footer nav menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mobile-first-footer .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .mobile-second-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+
+  .mobile-second-footer nav menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mobile-second-footer nav menu li a {
+    text-decoration: underline;
+  }
+}
+/* mobile Footer end */
