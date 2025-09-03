@@ -192,6 +192,141 @@ body {
 }
 /* Header mobile menu end */
 
+/* homesection5 start */
+.request-container {
+  display: flex;
+  width: 100%;
+  height: 958px;
+  padding: 112px 64px;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.request-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.request-section .left-section {
+  flex: 1;
+}
+
+.text-section p {
+  font-size: 16px;
+}
+
+.text-section h2 {
+  font-size: 48px;
+}
+
+.text-section p:nth-last-child {
+  font-size: 18px;
+}
+
+.form-section {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="time"],
+.form-group select {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 12px;
+  height: 48px;
+  width: 100%;
+}
+
+.form-group label,
+.form-group textarea {
+  font-size: 16px;
+}
+
+.form-group textarea {
+  color: rgba(80, 80, 80, 1);
+}
+
+.form-group.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  z-index: 100;
+}
+
+.form-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin: 0;
+  gap: 8px;
+}
+
+.form-group input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 1px;
+  width: 99px;
+  height: 48px;
+  gap: 8px;
+}
+
+.request-section .right-section {
+  flex: 1;
+  margin-top: 7%;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+/* mobile start */
+@media (max-width: 768px) {
+  .request-container {
+    height: auto;
+  }
+
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .form-group {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .right-section {
+    display: none;
+  }
+}
+
+/* mobile end */
+
+/* homesection5 end */
+
 /* Footer start */
 footer {
   display: flex;
