@@ -987,14 +987,23 @@ footer .footer-container {
     font-size: 16px;
   }
 
+  .btn-container-view{
+    align-self: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
   .view-services {
     display: block;
-    width: 300px;
+    width: 100%;
+    max-width: 550px;
     font-size: 16px;
     padding: 12px 20px;
     border-radius: 12px;
     margin: 1rem auto;
+    background-color: transparent;
   }
+  
 
   .extra-services {
     display: none;
