@@ -214,12 +214,10 @@ body {
   gap: 20px;
   font-size: 14px;
   align-items: center;
-  border: 1px solid black;
   padding: 48px;
   height: 258px;
   justify-content: space-between;
   margin: 0 auto;
-  border: 1px solid black;
   width: 80%;
   height: auto;
 }
