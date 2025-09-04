@@ -1,8 +1,7 @@
 /*Colors*/
-:root{
+:root {
   --border-color: #676767;
 }
-
 
 /* Initial CSS Setup Start */
 
@@ -252,7 +251,7 @@ body {
 }
 
 /* homesection6 end */
-=======
+
 /* homesection5 start */
 .request-container {
   display: flex;
@@ -387,6 +386,115 @@ body {
 /* mobile end */
 
 /* homesection5 end */
+
+/* homehomesection7 start */
+
+.homesection7-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 112px 64px;
+}
+
+.homesection7-container .text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  align-items: center;
+  border: 1px solid black;
+  padding: 48px;
+  height: 258px;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 80%;
+  height: auto;
+}
+
+.homesection7-container .text-wrap h1 {
+  font-size: 48px;
+}
+
+.homesection7-container p:first-child {
+  font-size: 16px;
+}
+
+.homesection7-container p:last-child {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  height: 48px;
+}
+
+.subscribe-text-form {
+  min-height: 48px;
+  border-radius: 5px;
+  padding: 12px;
+  border: 1px solid black;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.subscribe-text-form {
+  width: 70%;
+}
+
+.subscribe-submit-btn {
+  min-height: 48px;
+  border-radius: 5px;
+  padding: 12px 24px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.homesection7-request-btn {
+  background-color: black;
+  color: white;
+  width: 160px;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .homesection7-container .text-wrap h1 {
+    font-size: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .homesection7-container p:first-child {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .homesection7-container p:last-child {
+    display: none;
+  }
+
+  .subscribe-form {
+    display: none;
+  }
+
+  .homesection7-request-btn {
+    display: block;
+  }
+}
+
+/* homehomesection7 end */
 
 
 /* Footer start */
@@ -789,73 +897,72 @@ footer .footer-container {
 
 /*Section 1 End*/
 
+
 /*Services section*/
-  .home-services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.home-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-services {
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
   }
 
-  .title-services{
+  p {
+    font-size: 18px;
+  }
+}
 
-    h2{
-      font-size: 48px;
-      font-weight: 700;
-    }
+.collage-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
 
-    p{
-      font-size: 18px;
-    }
+.service-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  h3 {
+    margin: 1rem 0 0.5rem;
   }
 
-
-  .collage-services{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 0 auto;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
+  p {
+    padding: 0 1rem 1.5rem;
   }
+}
 
-  .service-card{
-    flex: 1 1 300px;
-    max-width: 350px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
+.service-card:hover {
+  transform: translateY(-5px);
+}
 
-    h3{
-      margin: 1rem 0 0.5rem;
-    }
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-    p{
-      padding: 0 1rem 1.5rem;
-    }
-  }
+.view-services {
+  display: none;
+}
 
-  .service-card:hover{
-    transform: translateY(-5px);
-  }
-
-  .service-card img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .view-services{
-    display: none;
-  }
-
-  /*Resposive home Services*/
-  @media (max-width: 768px) {
+/*Resposive home Services*/
+@media (max-width: 768px) {
   .collage-services {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     padding: 1rem;
   }
 
@@ -871,7 +978,7 @@ footer .footer-container {
     font-size: 16px;
   }
 
-  .view-services{
+  .view-services {
     display: block;
     width: 300px;
     font-size: 16px;
@@ -880,10 +987,9 @@ footer .footer-container {
     margin: 1rem auto;
   }
 
-  .extra-services{
+  .extra-services {
     display: none;
   }
 }
-
 
 /*Services section end*/
